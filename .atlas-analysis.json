@@ -1,0 +1,97 @@
+{
+  "projectType": "saas",
+  "projectName": "Unbox",
+  "projectDescription": "A mobile marketplace connecting users with local businesses to purchase surplus offers at discounted prices.",
+  "theme": "almond",
+  "primaryColor": "#7c7c7c",
+  "lightColor": "#0a0a0a",
+  "darkColor": "#c9c9c9",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/discover-offers",
+              "features/location-based-search",
+              "features/checkout-payments",
+              "features/user-profile"
+            ]
+          },
+          {
+            "group": "For Businesses",
+            "pages": [
+              "business/partner-overview",
+              "business/offer-management",
+              "business/stripe-integration"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Development",
+        "groups": [
+          {
+            "group": "Setup",
+            "pages": [
+              "development/installation",
+              "development/environment-setup",
+              "development/supabase-setup"
+            ]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "development/project-structure",
+              "development/routing",
+              "development/state-management"
+            ]
+          },
+          {
+            "group": "Components",
+            "pages": [
+              "components/offer-card",
+              "components/ui-components",
+              "components/sections"
+            ]
+          },
+          {
+            "group": "Backend",
+            "pages": [
+              "backend/database-schema",
+              "backend/supabase-functions",
+              "backend/authentication"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Location-based offer discovery with interactive maps",
+    "Real-time stock tracking and limited availability alerts",
+    "Stripe payment integration with native mobile support",
+    "User favorites and order history",
+    "Multi-category search and filtering",
+    "Partner business management"
+  ],
+  "publicApiSurface": [
+    "supabase.auth.signInWithPassword()",
+    "supabase.auth.signUp()",
+    "expo-location getCurrentPositionAsync()",
+    "expo-router navigation",
+    "OfferCard component",
+    "FavoriteButton component",
+    "SearchResults component",
+    "CategoriesSection component"
+  ]
+}
